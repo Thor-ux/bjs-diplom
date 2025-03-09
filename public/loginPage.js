@@ -1,9 +1,9 @@
 "use strict";
 
-// Create object
+// Create Object
 const userForm = new UserForm();
 
-// login functionality
+// Login
 userForm.loginFormCallback = function(data) {
     ApiConnector.login(data, function(response) {
         console.log('Login response:', response);
@@ -15,7 +15,7 @@ userForm.loginFormCallback = function(data) {
     });
 };
 
-// registration functionality
+// Registration
 userForm.registerFormCallback = function(data) {
     ApiConnector.register(data, function(response) {
         console.log('Registration response:', response);

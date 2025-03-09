@@ -40,8 +40,9 @@ function updateRates() {
   });
 }
 
+// Update Rates Per Minutes!!!
 updateRates();
-setInterval(updateRates, 60000); // Update Rates Per Minutes!!!
+setInterval(updateRates, 60000);
 
 // Transactions
 const moneyManager = new MoneyManager();
